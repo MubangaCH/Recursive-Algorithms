@@ -2,17 +2,17 @@
 
 
 import sys
-
+# a and b are two integers
 def GCD(a,b):
     
     
     
     if a > b and b !=0:
-        r = a % b
+        r = a % b           #r is the remainder when a (or b) is divided by b (or a)
         if r == 0:
             return b
         else:
-            return GCD(b, r)
+            return GCD(b, r) # uses b and r as the next arguments for the function
   
     if b > a and a != 0:
         r= b % a
